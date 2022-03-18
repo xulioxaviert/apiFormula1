@@ -53,7 +53,7 @@ const patchOne = async (req, res, next) => {
     // updatear el actor -> Método de mongoose - que sustituye el pilot en la DB
     // Param 1- el id recuperado
     // param 2 - el actor con la info del front
-    const updatePilot = await Pilot.findByIdAndUpdate(id, actor);
+    const updatePilot = await Pilot.findByIdAndUpdate(id, pilot);
     return res.status(200).json(updatePilot);
   } catch (error) {
     return next(error);

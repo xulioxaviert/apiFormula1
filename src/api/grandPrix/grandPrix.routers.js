@@ -12,8 +12,8 @@ const {
 
 GrandPrixRoutes.get("/", getAll);
 GrandPrixRoutes.get("/:id", getOne);
-GrandPrixRoutes.post("/", [isAuth], postOne);
-GrandPrixRoutes.patch("/:id" ,[isAuth],  patchOne);
-GrandPrixRoutes.delete("/:id" ,[isAuth],  deleteOne);
+GrandPrixRoutes.post("/",  postOne);
+GrandPrixRoutes.patch("/:id" ,  patchOne);
+GrandPrixRoutes.delete("/:id" ,  deleteOne);
 
 module.exports = GrandPrixRoutes;

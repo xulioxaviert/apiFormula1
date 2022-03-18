@@ -7,7 +7,7 @@ const pilotSchema = new mongoose.Schema(
   // Trim: elimina los espacios al principio y final
   {
     name: { type: String, required: true, trim: true },
-    age: { type: Number, required: false, trim: true },
+    age: { type: String, required: false, trim: true },
     nationality: { type: String, required: false, trim: true },
     date: { type: String, required: false, trim: true },
     height: { type: Number, required: false, trim: true },
@@ -19,7 +19,7 @@ const pilotSchema = new mongoose.Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "grandprixes",
-        required: true,
+        required: false,
       },
     ],
   },

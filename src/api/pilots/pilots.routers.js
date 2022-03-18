@@ -14,8 +14,8 @@ const {
 
 PilotRouter.get("/", getAll);
 PilotRouter.get("/:id", getOne);
-PilotRouter.post("/", [isAuth], upload.single("img"), postOne);
-PilotRouter.patch("/:id", [isAuth], upload.single('img'), patchOne);
-PilotRouter.delete("/:id", [isAuth], deleteOne);
+PilotRouter.post("/",  upload.single("img"), postOne);
+PilotRouter.patch("/:id",  upload.single('img'), patchOne);
+PilotRouter.delete("/:id",  deleteOne);
  
 module.exports = PilotRouter;

@@ -4,6 +4,6 @@ const { register, login, logout } = require('./users.controller');
 
 UserRoutes.post('/register', register);
 UserRoutes.post('/login', login);
-UserRoutes.post('/logout', [isAuth], logout);
+UserRoutes.post('/logout', logout);
 
 module.exports = UserRoutes;
