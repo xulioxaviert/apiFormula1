@@ -15,13 +15,7 @@ const pilotSchema = new mongoose.Schema(
     number: { type: Number, required: false, trim: true },
     championship: { type: Number, required: false, trim: true },
     img: { type: String, required: false, trim: true },
-    race: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "grandprixes",
-        required: false,
-      },
-    ],
+    race: { type: Number, required: false, trim: true }
   },
   // Timestamps: fecha de creación - modificación
   {

@@ -19,6 +19,7 @@ const UserRoutes = require('./src/api/users/users.routes')
 // Ejecutar mi función de conexión a la DB
 connect();
 
+
 // Inicializar Express
 const app = express();
 
