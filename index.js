@@ -37,7 +37,16 @@ extended: false,
 );
 
 // Config de Proxies + CORS
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:4200",
+      "https://formula1-page.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 
 app.use("/api/teams", TeamsRouts);
 app.use("/api/pilots", PilotRouter);
